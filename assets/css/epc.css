@@ -1,88 +1,100 @@
 /* General Styles */
 body {
-    font-family: 'Manrope', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* Navbar */
+/* Header and Navbar */
 .main-header {
-    background: #003366; /* Dark blue */
-    height: 60px; /* Reduced height */
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
+    background-color: #002b5b; /* Dark blue railway theme */
+    padding: 15px 0;
+}
+
+.header-upper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 0 20px;
-}
-
-/* Logo Placement */
-.logo-box {
-    flex: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .logo-box img {
-    max-height: 40px; /* Adjust logo size */
-}
-
-/* Navigation Menu */
-.main-menu {
-    flex: 2;
-    text-align: center;
+    height: 60px; /* Adjust logo height */
 }
 
 .main-menu ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center; /* Center align links */
 }
 
 .main-menu ul li {
-    display: inline-block;
     margin: 0 15px;
 }
 
 .main-menu ul li a {
-    color: #fff;
     text-decoration: none;
-    font-weight: 600;
+    color: white;
     font-size: 16px;
-    padding: 10px 15px;
-    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
 }
 
-/* Hover Effects */
-.main-menu ul li a:hover {
-    background: #fbbc05;
-    border-radius: 5px;
-    color: #003366;
-}
-
-/* Active Page (EPC) */
+.main-menu ul li a:hover,
 .main-menu ul li.current a {
-    background: #ff9800;
-    border-radius: 5px;
-    color: white;
-    padding: 10px 15px;
+    color: #ffa500; /* Highlight active link */
 }
 
-/* EPC Banner Section */
-.epc-banner {
-    background: url('../images/epc-banner.jpg') no-repeat center center/cover;
+/* Banner Section */
+/* EPC & RCC Duct Manufacturing Section */
+.intro-section {
     position: relative;
-    height: 300px; /* Reduced height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    background: url("/images/epc.jpg") center/cover no-repeat;
     color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.intro-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+.intro-section h2,
+.intro-section p {
+    position: relative;
+    z-index: 2; /* Ensures text is visible above overlay */
+}
+
+.intro-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+}
+
+.epc-banner {
+    position: relative;
+    background: url("./images/epc.jpg") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
 }
 
 .epc-banner .overlay {
@@ -91,125 +103,219 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
 }
 
-/* Sections */
+.epc-banner h1 {
+    position: relative;
+    font-size: 36px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.epc-banner p {
+    position: relative;
+    font-size: 18px;
+    z-index: 2;
+}
+
+/* Content Sections */
 .auto-container {
-    width: 85%;
-    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
     padding: 50px 0;
 }
 
-/* Introduction Section */
-.intro-section {
-    background: #e3f2fd; /* Light blue */
-    padding: 50px 20px;
+h2 {
+    font-size: 28px;
+    color: #002b5b;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
     text-align: center;
 }
 
-/* EPC Services */
+/* EPC Solutions */
+/* Our EPC Solutions Section */
 .epc-services {
-    background: #f1f8e9; /* Light green */
+    background: #002b5b; /* Dark Blue Background */
+    padding: 80px 20px;
     text-align: center;
-    padding: 60px 20px;
 }
 
+.epc-services h2 {
+    font-size: 32px;
+    color: #ffa500; /* Orange Heading */
+    margin-bottom: 30px;
+}
+
+/* Service Boxes */
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 .service-box {
-    background: white;
+    flex: 1;
+    min-width: 280px;
+    background: #ffffff; /* White Background */
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-}
-
-.service-box img {
-    width: 100%;
     border-radius: 10px;
-    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
+/* Feature Box Text */
+.service-box h3 {
+    font-size: 22px;
+    color: #002b5b; /* Dark Blue Text */
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    color: #333; /* Dark Grey Text */
+}
+
+/* Hover Effect */
 .service-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* RCC Duct Manufacturing */
-.rcc-ducts {
-    background: url('../images/rcc-duct-bg.jpg') no-repeat center center/cover;
-    text-align: center;
-    padding: 60px 20px;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background: #ffa500; /* Orange Background on Hover */
     color: white;
-    position: relative;
 }
 
-.rcc-ducts .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+.service-box:hover h3 {
+    color: white; /* Change text color to white on hover */
 }
 
-/* Duct Grid */
+.service-box:hover p {
+    color: #f8f8f8; /* Lighter text for better readability */
+}
+/* RCC Duct Manufacturing Section */
+.rcc-ducts {
+    background: linear-gradient(to right, #1a1a2e, #16213e); /* Dark blue gradient */
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.rcc-ducts h2 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #ffa500; /* Orange heading for contrast */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Duct Features Grid */
 .duct-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .duct-box {
-    background: rgba(255, 255, 255, 0.1);
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.1); /* Light transparent box */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease, background 0.3s ease;
-    backdrop-filter: blur(5px);
+    transition: transform 0.3s, background 0.3s;
 }
 
+/* Title inside the duct box */
+.duct-box h3 {
+    font-size: 22px;
+    color: #ffa500; /* Orange title */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Text inside the duct box */
+.duct-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f8f8f8; /* Light gray text */
+}
+
+/* Hover Effects */
 .duct-box:hover {
     transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.duct-box:hover h3 {
+    color: #fff; /* White title on hover */
 }
 
 /* Call to Action */
-.cta-section {
-    text-align: center;
-    background: #003366;
+/* Get in Touch Section */
+.get-in-touch {
+    background: #002b5b; /* Dark Blue */
     color: white;
+    text-align: center;
     padding: 50px 20px;
 }
 
-.cta-buttons {
-    margin-top: 20px;
-}
-
-.cta-buttons .btn {
-    background: #fbbc05;
-    color: #003366;
-    padding: 14px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
+.get-in-touch h2 {
+    font-size: 28px;
     font-weight: bold;
-    transition: 0.3s ease-in-out;
-    margin: 10px;
+    color: #ffa500; /* Orange heading */
+    margin-bottom: 15px;
 }
 
-.cta-buttons .btn:hover {
-    background: #ff9800;
-    transform: scale(1.05);
+.get-in-touch p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #f8f8f8;
 }
+
+/* Buttons */
+.get-in-touch .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.get-in-touch .btn {
+    display: inline-block;
+    background: #ffa500;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.get-in-touch .btn:hover {
+    background: #ff7b00;
+}
+
+
+/* Force Footer Bottom to Black */
+.main-footer {
+    background-color: black !important; /* Fully Black Background */
+    color: rgba(255, 255, 255, 0.911) !important; /* White Text for Visibility */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 500;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%; /* Ensure Full Width */
+}
+
