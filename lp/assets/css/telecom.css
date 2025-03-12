@@ -1,0 +1,419 @@
+/* General Styles */
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+.main-header {
+    background: #003366;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.main-header .logo-box img {
+    max-height: 60px;
+}
+
+.main-header .main-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.main-header .main-menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.main-header .main-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.main-header .main-menu ul li a:hover {
+    color: #fbbc05;
+}
+
+/* Banner Section */
+/* Telecom Banner Section */
+.telecom-banner {
+    background: url('./images/tele.lp.jpg') no-repeat center center/cover;
+    position: relative;
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Dark Overlay for Better Readability */
+.telecom-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Text Styling */
+.telecom-banner h1 {
+    font-size: 42px;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+}
+
+.telecom-banner p {
+    font-size: 18px;
+    z-index: 2;
+    position: relative;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* Sections */
+.auto-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Introduction Section */
+.intro-section {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro-section h2 {
+    font-size: 32px;
+    color: #003366;
+}
+
+.intro-section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Services Section */
+/* Our Telecom Services Section */
+.services-section {
+    background: linear-gradient(135deg, #f1f8e9 0%, #c5e1a5 100%); /* Soft green gradient */
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Unique Bottom Border Effect */
+.services-section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80%;
+    height: 5px;
+    background: #388e3c; /* Darker green */
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+/* Section Heading */
+.services-section h2 {
+    font-size: 34px;
+    color: #1b5e20; /* Deep green */
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Service Box */
+.service-box {
+    background: #ffffff; /* White background */
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    border: 2px solid #a5d6a7; /* Soft green border */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect - Turns Green */
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    background: #81c784; /* Light green */
+    border-color: #388e3c; /* Dark green */
+    color: white;
+}
+
+/* Icon Styling */
+.service-box i {
+    font-size: 42px;
+    color: #2e7d32; /* Dark green */
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+/* Icon Hover Effect */
+.service-box:hover i {
+    color: #ffffff;
+}
+
+/* Service Text */
+.service-box h3 {
+    font-size: 22px;
+    color: #1b5e20;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+/* Text Hover Effect */
+.service-box:hover h3, 
+.service-box:hover p {
+    color: #ffffff;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+
+/* Technologies Section */
+
+.technologies-section {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); /* Light blue gradient */
+    padding: 70px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Section Heading */
+.technologies-section h2 {
+    font-size: 32px;
+    color: #002147; /* Deep navy blue */
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Technologies Grid */
+.technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Technology Box */
+.technology-box {
+    background: #ffffff; /* White background */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    border: 2px solid #bbdefb;
+}
+
+/* Hover Effect - Light Blue */
+.technology-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    background: #90caf9; /* Light sky blue */
+    border-color: #42a5f5; /* Darker blue */
+    color: white;
+}
+
+/* Icon Styling */
+.technology-box i {
+    font-size: 42px;
+    color: #007bb5;
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+/* Icon Hover Effect */
+.technology-box:hover i {
+    color: #ffffff;
+}
+
+/* Technology Text */
+.technology-box h3 {
+    font-size: 22px;
+    color: #003366;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+/* Text Hover Effect */
+.technology-box:hover h3, 
+.technology-box:hover p {
+    color: #ffffff;
+}
+
+.technology-box p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+
+/* Why Choose Us Section */
+/* Why Choose Our Telecom Solutions Section */
+.why-choose-telecom {
+    background: url('images/why.lp.jpg') no-repeat center center/cover;
+    position: relative;
+    padding: 70px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Dark Overlay for Better Readability */
+.why-choose-telecom .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Section Title */
+.why-choose-telecom h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+/* List Styling */
+.why-choose-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+/* List Item */
+.why-choose-list li {
+    font-size: 18px;
+    padding: 12px;
+    color: white;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.15); /* Transparent effect */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+.why-choose-list li:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(5px);
+}
+
+/* Check Icon */
+.why-choose-list i {
+    font-size: 22px;
+    color: #fbbc05; /* Yellow */
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #003366;
+    color: white;
+}
+
+.contact-section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-section .btn {
+    background: #fbbc05;
+    color: #003366;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section .btn:hover {
+    background: #ff9800;
+}
+
+/* Footer */
+.main-footer {
+    background: #222;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+.main-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-header .main-menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .banner .content h1 {
+        font-size: 28px;
+    }
+
+    .banner .content p {
+        font-size: 16px;
+    }
+
+    .service-box {
+        margin: 10px auto;
+    }
+}
