@@ -1,0 +1,238 @@
+/* ==================== HERO SECTION (WITH ANIMATION & PARALLAX) ==================== */
+.appointment-hero {
+    background: url('../images/appointment1.png.jpg') no-repeat center center/cover;
+    height: 40vh; /* Adjusted size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Dark Overlay */
+.appointment-hero .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.appointment-hero .hero-content {
+    position: relative;
+    z-index: 1;
+    transform: translateY(10px);
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
+}
+
+.appointment-hero h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.appointment-hero p {
+    font-size: 1.2rem;
+}
+
+/* ==================== HOW IT WORKS (WITH ICON ANIMATION) ==================== */
+.how-it-works {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(to right, #f7f7f7, #eaeaea);
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 20px;
+}
+
+.step {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.step i {
+    font-size: 3rem;
+    color: #007bff;
+    animation: bounce 2s infinite;
+}
+
+/* ==================== APPOINTMENT FORM STYLES ==================== */
+.appointment-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    background: #222741;  /* Darker background for better contrast */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: 1px solid #333957;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Form Heading */
+.appointment-form h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ffffff;  /* White text for high contrast */
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ffffff; /* Light text for better visibility */
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #2d334a;  /* Darker background for input fields */
+    font-size: 1rem;
+    color: #ffffff;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* Placeholder Styling */
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Hover & Focus Effects */
+.input-group input:focus,
+.input-group textarea:focus {
+    background: #3a425b;
+    border: 1px solid #00c6ff;
+    box-shadow: 0 4px 8px rgba(0, 198, 255, 0.3);
+}
+
+/* Submit Button */
+.appointment-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Animation */
+.appointment-btn:hover {
+    background: linear-gradient(to right, #0056b3, #003f7f);
+    transform: translateY(-3px);
+}
+
+/* Button Click Effect */
+.appointment-btn:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .appointment-form {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+
+/* ==================== WHY CHOOSE US (WITH PARALLAX EFFECT) ==================== */
+.why-choose-us {
+    text-align: center;
+    padding: 80px;
+    background: url('../images/appointment2.png.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+}
+
+.benefit {
+    flex: 1;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+/* ==================== CONTACT PAGE BUTTON (WITH HOVER EFFECT) ==================== */
+.contact-section {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: white;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-btn:hover {
+    background: #fff;
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* ==================== FOOTER (WITH SLIDE IN EFFECT) ==================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    font-size: 14px;
+    animation: slideUp 1s ease-in-out forwards;
+}
+
+/* ==================== KEYFRAME ANIMATIONS ==================== */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
