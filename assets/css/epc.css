@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navbar */
+.main-header {
+    background: #003366; /* Dark blue */
+    height: 60px; /* Reduced height */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+}
+
+/* Logo Placement */
+.logo-box {
+    flex: 1;
+}
+
+.logo-box img {
+    max-height: 40px; /* Adjust logo size */
+}
+
+/* Navigation Menu */
+.main-menu {
+    flex: 2;
+    text-align: center;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center align links */
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.main-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.main-menu ul li a:hover {
+    background: #fbbc05;
+    border-radius: 5px;
+    color: #003366;
+}
+
+/* Active Page (EPC) */
+.main-menu ul li.current a {
+    background: #ff9800;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+}
+
+/* EPC Banner Section */
+.epc-banner {
+    background: url('../images/epc-banner.jpg') no-repeat center center/cover;
+    position: relative;
+    height: 300px; /* Reduced height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.epc-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Sections */
+.auto-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* Introduction Section */
+.intro-section {
+    background: #e3f2fd; /* Light blue */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* EPC Services */
+.epc-services {
+    background: #f1f8e9; /* Light green */
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.service-box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* RCC Duct Manufacturing */
+.rcc-ducts {
+    background: url('../images/rcc-duct-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    position: relative;
+}
+
+.rcc-ducts .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Duct Grid */
+.duct-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.duct-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.duct-box:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Call to Action */
+.cta-section {
+    text-align: center;
+    background: #003366;
+    color: white;
+    padding: 50px 20px;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-buttons .btn {
+    background: #fbbc05;
+    color: #003366;
+    padding: 14px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.cta-buttons .btn:hover {
+    background: #ff9800;
+    transform: scale(1.05);
+}
