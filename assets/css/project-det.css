@@ -1,0 +1,200 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Projects Section (Modal Content Styling) */
+.projects-section {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Light gray for consistency */
+    min-height: 100vh;
+}
+
+/* Modal Background */
+.modal-content {
+    background-color: #f9f9f9; /* Slightly off-white background for modal */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+/* Section Title (Modal Header) */
+.modal-header {
+    background-color: #4682b4; /* Steel Blue from Project 01 */
+    color: #fff;
+    border-bottom: none; /* Remove default border */
+    padding: 15px 20px;
+}
+
+.modal-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-close {
+    filter: invert(1); /* White close button for contrast */
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 20px;
+}
+
+/* Section Title (Inside Modal Body) */
+.section-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Content Styling */
+.row {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.col-md-6 {
+    flex: 1;
+}
+
+.col-md-6 p {
+    font-size: 1.1rem;
+    color: #444; /* Slightly darker for readability */
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify; /* Cleaner text alignment */
+}
+
+.col-md-6 p strong {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Subheading (e.g., "Additional Images") */
+.modal-body h6 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #696969; /* Dim Gray from Project 02 */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Larger images */
+    gap: 20px; /* More spacing */
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 180px; /* Fixed height for uniformity */
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced hover effect */
+}
+
+/* Back Button (Modal Footer) */
+.modal-footer .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #4682b4; /* Steel Blue */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.modal-footer .btn:hover {
+    background-color: #355f8c; /* Darker Steel Blue */
+    color: #fff;
+}
+
+.text-center.mt-4 {
+    margin-top: 40px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .modal-header {
+        padding: 10px 15px;
+    }
+
+    .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .modal-body {
+        padding: 15px;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .section-title p {
+        font-size: 1rem;
+    }
+
+    .col-md-6 p {
+        font-size: 1rem;
+    }
+
+    .modal-body h6 {
+        font-size: 1.1rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+
+    .gallery img {
+        height: 140px;
+    }
+
+    .modal-footer .btn {
+        padding: 8px 20px;
+    }
+}

@@ -1,4 +1,101 @@
-/* General Styling */
+/* General Styles for the Header */
+.main-header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px; 
+}
+
+/* Logo Styling */
+.navbar-brand {
+    flex-grow: 0; 
+}
+
+.navbar-brand img {
+    max-height: 50px; 
+    object-fit: contain;
+}
+
+/* Navbar Links Styling */
+.navbar-nav {
+    display: flex;           
+    list-style: none;       
+    padding: 0;              
+    margin: 0;              
+    justify-content: flex-end; 
+}
+
+.nav-item {
+    margin-left: 30px;       
+}
+
+.nav-link {
+    color: #333;            
+    font-weight: 500;        
+    font-size: 16px;         
+    text-transform: uppercase; 
+    transition: color 0.3s ease; 
+}
+
+/* Hover Effect on Links */
+.nav-link:hover {
+    color: #007bff;          
+    text-decoration: underline; 
+}
+
+/* Active Link Style */
+.nav-link.active {
+    color: #007bff;          
+    font-weight: 600;       
+}
+
+/* Navbar Toggler (Hamburger Icon) for Mobile */
+.navbar-toggler {
+    border-color: #007bff;   
+}
+
+.navbar-toggler-icon {
+    background-color: #007bff; 
+}
+
+/* Mobile (Collapsed Navbar) Styles */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #f8f9fa; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav {
+        text-align: center;      
+        flex-direction: column;   
+
+    .nav-item {
+        margin: 10px 0;           
+    }
+
+    .nav-link {
+        font-size: 18px;          /* Larger text for mobile */
+    }
+
+    .nav-link:hover {
+        color: #007bff;           /* Hover color */
+    }
+}
+
+/* Ensure navbar items align correctly on larger screens */
+@media (min-width: 992px) {
+    .navbar-nav .nav-item {
+        margin-left: 30px; /* Adds space between menu items on large screens */
+    }
+}
+
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -177,4 +274,5 @@ body {
     .contact-box h3 {
         font-size: 20px;
     }
+}
 }

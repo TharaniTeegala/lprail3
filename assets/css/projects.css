@@ -1,0 +1,226 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* Section Title */
+.projects-section .section-title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.projects-section .section-title h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.projects-section .section-title p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Project Card Styling */
+.projects-section .project-card {
+    height: 400px;
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+
+.projects-section .project-card .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.projects-section .project-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.projects-section .project-card .card-front,
+.projects-section .project-card .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Front Card Styling */
+.projects-section .project-card .card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important; /* Force white text */
+}
+
+.projects-section .project-card .card-front h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Back Card Styling */
+.projects-section .project-card .card-back {
+    transform: rotateY(180deg);
+    background-color: #fff !important; /* Force white background */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #333;
+}
+
+.projects-section .project-card .card-back h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.projects-section .project-card .card-back h4 {
+    font-size: 1.2rem;
+    color: #4682b4; /* Matches Project 01 color for consistency */
+    margin-bottom: 10px;
+}
+
+.projects-section .project-card .card-back p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.projects-section .project-card .card-back p strong {
+    color: #333;
+}
+
+/* Coming Soon Card */
+.projects-section .project-card .card-back.coming-soon {
+    background-color: #f1f1f1 !important;
+    text-align: center;
+    justify-content: center;
+}
+
+/* View More Button */
+.projects-section .project-card .view-more a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4682b4; /* Matches Project 01 color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.projects-section .project-card .view-more a:hover {
+    background-color: #355f8c; /* Darker shade of Steel Blue */
+}
+
+.projects-section .project-card .view-more a.disabled {
+    background-color: #ccc;
+    pointer-events: none;
+}
+
+/* Updated Colors for Each Project Card */
+.projects-section .project-card:nth-child(1) .card-front {
+    background-color: #4682b4 !important; /* Steel Blue for Project 01 */
+}
+
+.projects-section .project-card:nth-child(2) .card-front {
+    background-color: #696969 !important; /* Dim Gray for Project 02 */
+}
+
+.projects-section .project-card:nth-child(3) .card-front {
+    background-color: #8b0000 !important; /* Dark Red for Project 03 */
+}
+
+/* Gallery Styling */
+.projects-section .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.projects-section .gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section .gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 40px 0;
+    }
+
+    .projects-section .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .projects-section .section-title p {
+        font-size: 1rem;
+    }
+
+    .projects-section .project-card {
+        height: 250px;
+    }
+
+    .projects-section .project-card .card-front h3 {
+        font-size: 1.5rem;
+    }
+
+    .projects-section .project-card .card-back h3 {
+        font-size: 1.3rem;
+    }
+
+    .projects-section .project-card .card-back h4 {
+        font-size: 1rem;
+    }
+
+    .projects-section .project-card .card-back p {
+        font-size: 0.9rem;
+    }
+
+    .projects-section .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .projects-section .gallery img {
+        height: 120px;
+    }
+}

@@ -2294,6 +2294,11 @@ div#mCSB_1_container{
 .service-section .sec-title{
   margin-bottom: 65px;
 }
+.service-block{
+  position:relative;
+  justify-content: center;
+  align-content:center;
+}
 
 .service-block-one .inner-box{
   position: relative;
@@ -7251,170 +7256,119 @@ div#mCSB_1_container{
 
 /** service-style-three **/
 
-.service-style-three{
+.service-style-three {
   position: relative;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  width: 100%; /* Full width to ensure proper centering */
+  height: 100vh; /* Adjust height to match the viewport */
+}
+
+.service-block-three {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  text-align: center; /* Ensures text alignment */
 }
 
 .sec-title p{
   margin-top: 22px;
 }
 
-.service-block-three .inner-box{
+./* Centering the section */
+.service-style-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.service-block {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Box Styling */
+.service-block-three .inner-box {
   position: relative;
   display: block;
   overflow: hidden;
-  border: 1px solid #fff;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+  border: 1px solid #1d3462;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   padding: 36px 30px 35px 75px;
-  transition: all 500ms ease;
+  background: #ffffff; /* Default white background */
+  transition: all 0.4s ease-in-out;
+  border-radius: 10px;
 }
 
-.service-block-three .inner-box:hover{
-  transform: translateY(-10px);
+/* Hover Effect */
+.service-block-three .inner-box:hover {
+  background: #1d3462; /* Change background to blue */
+  color: #ffffff; /* Change text color to white */
+  transform: translateY(-10px); /* Add slight lift effect */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow for better effect */
 }
 
-.service-block-three .inner-box h6{
-  position: absolute;
-  display: inline-block;
-  font-size: 14px;
-  line-height: 24px;
-  color: #827e7d;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-right: 70px;
-  transform: rotate(-90deg);
-  left: -41px;
-  top: 104px;
+/* Change text color inside box on hover */
+.service-block-three .inner-box:hover h3 a,
+.service-block-three .inner-box:hover p,
+.service-block-three .inner-box:hover .link-btn a {
+  color: #ffffff !important;
 }
 
-.service-block-three .inner-box h6:before{
-  position: absolute;
-  content: '';
-  background: #d6d6d6;
-  height: 1px;
-  width: 50px;
-  right: 0px;
-  top: 10px;
-}
-
-.service-block-three .inner-box .icon-box{
-  position: relative;
-  display: block;
-  font-size: 66px;
-  line-height: 60px;
-  margin-bottom: 24px;
-}
-
-.service-block-three .inner-box h3{
-  position: relative;
-  display: block;
+/* Add a border line under the title */
+.service-block-three .inner-box h3 {
   font-size: 24px;
-  line-height: 34px;
   font-weight: 700;
-  padding-bottom: 19px;
-  margin-bottom: 22px;
-}
-
-.service-block-three .inner-box h3 a{
-  display: inline-block;
-  color: #1d3462;
-}
-
-.service-block-three .inner-box h3 a:hover{
-
-}
-
-.service-block-three .inner-box h3:before{
-  position: absolute;
-  content: '';
-  width: 100px;
-  height: 2px;
-  left: 0px;
-  bottom: 0px;
-}
-
-.service-block-three .inner-box h3:after{
-  position: absolute;
-  content: '';
-  width: 2px;
-  height: 12px;
-  left: 100px;
-  bottom: -5px;
-}
-
-.service-block-three .inner-box p{
-  display: block;
-  margin-bottom: 26px;
-}
-
-.service-block-three .inner-box .link-btn a{
+  padding-bottom: 15px;
+  margin-bottom: 20px;
   position: relative;
+}
+
+/* Add a blue underline effect */
+.service-block-three .inner-box h3:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background: #1d3462;
+  left: 0;
+  bottom: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Change underline color on hover */
+.service-block-three .inner-box:hover h3:before {
+  background: #ffffff;
+}
+
+/* Button Styling */
+.service-block-three .inner-box .link-btn a {
   display: inline-block;
   font-size: 14px;
-  line-height: 24px;
-  font-family: 'Monda', sans-serif;
-  color: #1d3462;
   font-weight: 700;
   text-transform: uppercase;
+  color: #1d3462;
+  padding: 8px 20px;
+  border: 2px solid #1d3462;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
 }
 
-.service-block-three .inner-box .link-btn a:hover{
-
-}
-
-.service-block-three .inner-box .link-btn a span{
-  position: relative;
-  padding-left: 20px;
-  transition: all 500ms ease;
-}
-
-.service-block-three .inner-box .link-btn a span:before{
-  position: absolute;
-  content: "\f105";
-  font-family: 'flaticon';
-  font-size: 16px;
-  left: 0px;
-  top: 0px;
-  transition: all 500ms ease;
-}
-
-.service-block-three .inner-box .link-btn a span:after{
-  position: absolute;
-  content: "\f105";
-  font-family: 'flaticon';
-  width: 26px;
-  height: 26px;
-  line-height: 26px;
-  font-size: 12px;
-  color: #fff;
-  text-align: center;
-  border-radius: 50%;
-  left: 0px;
-  top: -1px;
-  opacity: 0;
-  transition: all 500ms ease;
-}
-
-.service-block-three .inner-box .link-btn a:hover span:after{
-  opacity: 1;
-}
-
-.service-block-three .inner-box .link-btn a:hover span{
-  padding-left: 36px;
-}
-
-.service-block-three .inner-box .link-btn a:after{
-  position: absolute;
-  content: '';
-  width: 45px;
-  height: 1px;
-  left: -42px;
-  top: 11px;
-  transition: all 500ms ease;
-}
-
-.service-block-three .inner-box .link-btn a:hover:after{
-  opacity: 0;
+/* Button Hover */
+.service-block-three .inner-box .link-btn a:hover {
+  background: #ffffff;
+  color: #1d3462 !important;
+  border-color: #ffffff;
 }
 
 
