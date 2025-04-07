@@ -8,22 +8,22 @@
 /* Projects Section (Modal Content Styling) */
 .projects-section {
     padding: 60px 0;
-    background-color: #f8f9fa; /* Light gray for consistency */
+    background-color: #f8f9fa; 
     min-height: 100vh;
 }
 
 /* Modal Background */
 .modal-content {
-    background-color: #f9f9f9; /* Slightly off-white background for modal */
+    background-color: #f9f9f9; 
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
 }
 
 /* Section Title (Modal Header) */
 .modal-header {
-    background-color: #4682b4; /* Steel Blue from Project 01 */
+    background-color: #4682b4; 
     color: #fff;
-    border-bottom: none; /* Remove default border */
+    border-bottom: none; 
     padding: 15px 20px;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .btn-close {
-    filter: invert(1); /* White close button for contrast */
+    filter: invert(1); 
 }
 
 /* Modal Body */
@@ -77,10 +77,10 @@
 
 .col-md-6 p {
     font-size: 1.1rem;
-    color: #444; /* Slightly darker for readability */
+    color: #444; 
     line-height: 1.7;
     margin-bottom: 15px;
-    text-align: justify; /* Cleaner text alignment */
+    text-align: justify; 
 }
 
 .col-md-6 p strong {
@@ -92,7 +92,7 @@
 .modal-body h6 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #696969; /* Dim Gray from Project 02 */
+    color: #696969; 
     margin-bottom: 15px;
     text-transform: uppercase;
 }
@@ -100,30 +100,30 @@
 /* Gallery Styling */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Larger images */
-    gap: 20px; /* More spacing */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
     margin-top: 20px;
 }
 
 .gallery img {
     width: 100%;
-    height: 180px; /* Fixed height for uniformity */
+    height: 180px; 
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .gallery img:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
 }
 
 /* Back Button (Modal Footer) */
 .modal-footer .btn {
     display: inline-block;
     padding: 10px 25px;
-    background-color: #4682b4; /* Steel Blue */
+    background-color: #4682b4; 
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -134,7 +134,7 @@
 }
 
 .modal-footer .btn:hover {
-    background-color: #355f8c; /* Darker Steel Blue */
+    background-color: #355f8c; 
     color: #fff;
 }
 

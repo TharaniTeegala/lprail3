@@ -74,24 +74,25 @@
     .navbar-nav {
         text-align: center;      
         flex-direction: column;   
+    }
 
     .nav-item {
         margin: 10px 0;           
     }
 
     .nav-link {
-        font-size: 18px;          /* Larger text for mobile */
+        font-size: 18px;
     }
 
     .nav-link:hover {
-        color: #007bff;           /* Hover color */
+        color: #007bff;
     }
 }
 
-/* Ensure navbar items align correctly on larger screens */
+
 @media (min-width: 992px) {
     .navbar-nav .nav-item {
-        margin-left: 30px; /* Adds space between menu items on large screens */
+        margin-left: 30px; 
     }
 }
 
@@ -115,7 +116,7 @@ body {
     background-position: center;
     color: white;
     text-align: center;
-    padding: 50px 20px; /* Reduced height */
+    padding: 50px 20px;
 }
 
 .page-title::before {
@@ -131,7 +132,7 @@ body {
 .page-title h1 {
     position: relative;
     z-index: 2;
-    font-size: 32px; /* Reduced size */
+    font-size: 32px; 
     font-weight: bold;
     color: #f9d278;
     margin-bottom: 10px;
@@ -151,8 +152,8 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 700px; /* Set max width */
-    margin: 50px auto; /* Center horizontally and add space from top */
+    max-width: 700px; 
+    margin: 50px auto; 
 }
 
 .contact-form h2 {
@@ -274,5 +275,4 @@ body {
     .contact-box h3 {
         font-size: 20px;
     }
-}
 }
